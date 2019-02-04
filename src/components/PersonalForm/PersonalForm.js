@@ -10,22 +10,25 @@ class PersonalForm extends Component {
   render() {
     return (
       <div className="personal-form" data-test="personal-form">
-        <Title title="Персональная информация"/>
+        <Title title="Enter personal details"/>
         <input
           name="firstName"
-          placeholder="Имя"
+          data-cy="firstName"
+          placeholder="First Name"
           value={this.props.firstName}
           onChange={this.handleChangeForm}
         />
         <input
           name="lastName"
-          placeholder="Фамилия"
+          data-cy="lastName"
+          placeholder="Last Name"
           value={this.props.lastName}
           onChange={this.handleChangeForm}
         />
         <input
           name="email"
-          placeholder="email"
+          data-cy="email"
+          placeholder="Email"
           value={this.props.email}
           onChange={this.handleChangeForm}
         />

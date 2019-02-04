@@ -50,9 +50,9 @@ class App extends Component {
           />
         );
       case 3:
-        return <p data-test="congratulations">Поздравляем</p>;
+        return <p data-test="congratulations">Congratulations</p>;
       default:
-        return <p>Ошибка!</p>;
+        return <p>Mistake!</p>;
     }
   };
 
@@ -97,6 +97,7 @@ class App extends Component {
         <div className="button-panel">
           <button
             className="button-next"
+            data-cy="button-next"
             onClick={this.handleClickNextForm}
             disabled={!this.isFormCommitable()}
           >

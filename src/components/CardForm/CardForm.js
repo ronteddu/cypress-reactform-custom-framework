@@ -10,7 +10,7 @@ class CardForm extends Component {
   render() {
     return (
       <div data-test="card-form" className="card-form">
-        <Title title="Номер карты"/>
+        <Title title="Enter card details"/>
         <input
           name="cardNumber"
           placeholder="0000 0000 0000 0000"
